@@ -1,0 +1,69 @@
+name: template
+description: "A new Flutter project template-futtter v3.27.3 & dart 3.6.1"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Pour l'internationalisation et la localisation
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+
+  cupertino_icons: ^1.0.8
+
+  # Pour cacher / stocker des données localement
+  hive_flutter: ^1.1.0
+
+  # Pour les requetes Https
+  dio: ^5.3.3
+
+  # Pour gérer les états selon le pattern Bloc
+  flutter_bloc: ^9.0.0
+
+  # Pour gerer les variables d'environement
+  flutter_dotenv: ^5.2.1
+
+  # Pour enregistrer  de façon sécurisé dans le keychain IOS ou keystore Android
+  flutter_secure_storage: ^9.2.4
+  
+  # Pour gerer la navigation
+  go_router: ^14.7.2
+  
+  # Pour les logs
+  logger: ^2.0.2+1
+
+  # Pour enregistrer les préférences des utilisateurs
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+  generate: true 
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/
+    - assets/gif/
+    - assets/images/
+    - assets/icons/
+    - assets/json/
+    - assets/videos/
+  

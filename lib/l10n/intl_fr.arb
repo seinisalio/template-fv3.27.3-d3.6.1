@@ -1,0 +1,8 @@
+{
+    "@@locale": "fr",
+    "appTitle": "Template",
+    "@_DEMO_PAGE": {},
+    "demoPageTitle": "Flutter Accueil démonstration",
+    "demoPageMessage": "Vous avez appuyé autant de fois sur le bouton",
+    "demoPageBtnText": "Incrémentation"
+}

@@ -1,0 +1,3 @@
+
+const loginPost = {};
+const registerPost = {};
