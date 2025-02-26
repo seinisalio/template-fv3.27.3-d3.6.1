@@ -40,7 +40,7 @@ Pour chaque fonctionnalité nous utilisons l'architecture hexagonale.
     arch -x86_64 pod install
     pod repo update
 ```
-    ou
+ou
 ```sh
     pod install --repo-update
 ```

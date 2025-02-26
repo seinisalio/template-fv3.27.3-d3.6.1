@@ -47,7 +47,7 @@ class Api {
     // - Ajouter l'intercepteur qui ajoute le token
     // Sinon mocker les APIs en mode démo
     client.interceptors.add((mode == null || mode == 'demo') 
-      ? TokenInterceptor(client) : MockInterceptor()
+      ? MockInterceptor() : TokenInterceptor(client)
     );
 
     // L'ordre des intercepteurs compte
