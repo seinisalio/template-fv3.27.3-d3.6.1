@@ -40,9 +40,10 @@ class Api {
         connectTimeout: const Duration(minutes: 1), // 60 seconds
         receiveTimeout: const Duration(minutes: 1), // 60 seconds
       ),
-    )
-    // Ajouter l'intercepteur pour les erreurs
-    ..interceptors.add(ErrorInterceptor());
+    );
+    // L'ordre des intercepteurs compte
+    // - Ajouter l'intercepteur pour logger
+    if (kDebugMode) client.interceptors.add(LoggingInterceptor());
 
     // - Ajouter l'intercepteur qui ajoute le token
     // Sinon mocker les APIs en mode démo
@@ -50,9 +51,8 @@ class Api {
       ? MockInterceptor() : TokenInterceptor(client)
     );
 
-    // L'ordre des intercepteurs compte
-    // - Ajouter l'intercepteur pour logger
-    if (kDebugMode) client.interceptors.add(LoggingInterceptor());
+    // Ajouter l'intercepteur pour les erreurs
+    client.interceptors.add(ErrorInterceptor());
   }
 
   /// Effectue un appel GET
