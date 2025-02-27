@@ -24,9 +24,6 @@ class AppTheme {
   /// private constructor which prevents the class from being instantiated.
   AppTheme._();
 
-  /// Couleur marron
-  static const Color brownColor = Color(0xFF542D00);
-
   // Primary
   static const Color primary = Color(0xFFF2A900);
 
@@ -86,9 +83,9 @@ class AppTheme {
     backgroundColor: 
       WidgetStatePropertyAll(Colors.transparent),
     foregroundColor: 
-      WidgetStatePropertyAll(AppTheme.primaryDark),
+      WidgetStatePropertyAll(primaryDark),
     overlayColor:  
-      WidgetStatePropertyAll(AppTheme.primaryLight),
+      WidgetStatePropertyAll(primaryLight),
   );
 
   // primary btn height
@@ -141,8 +138,6 @@ class AppTheme {
         onError: blackColor,
         surface: whiteColor,
         onSurface: blackColor,
-        // surface: Color(0xFFdfe2eb),
-        // onSurface: Color(0xFF43474e),
       ),
     ),
     primaryIconTheme: const IconThemeData(
@@ -463,8 +458,6 @@ class AppTheme {
       onError: whiteColor,
       surface: Color(0xFF121212),
       onSurface: whiteColor,
-      // surface: Color(0xFF43474e),
-      // onSurface: Color(0xFFdfe2eb),
     ),
     buttonTheme: const ButtonThemeData(
       colorScheme: ColorScheme(

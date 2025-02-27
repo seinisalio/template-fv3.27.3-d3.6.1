@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
+import '../../../../core/router/router.dart';
 import '../bloc/demo_bloc.dart';
 import '../bloc/demo_event.dart';
 import '../bloc/demo_state.dart';
@@ -20,6 +21,13 @@ class DemoPage extends StatelessWidget {
       child: Scaffold(
         appBar: AppBar(
           title: Text(traductions.demoPageTitle),
+          actions: [
+            // Btn setting
+            IconButton(
+              icon: Icon(Icons.settings),
+              onPressed: () => AppRouter.push(context, AppRouter.settings),
+            ),
+          ],
         ),
         body: BlocBuilder<DemoBloc, DemoState>(
           buildWhen: (previous, current) => current is DemoUpdateState,

@@ -3,8 +3,7 @@ import 'dart:ui';
 enum Languages {
   //
   fr("fr_Fr"),
-  en("en_En"),
-  pt("pt_PT");
+  en("en_En");
 
   // Codification du theme
   final String code;
@@ -28,13 +27,9 @@ class AppLanguage {
       return Locale(Languages.en.name);
     }
     //
-    else if (code == Languages.pt.code) {
-      return Locale(Languages.pt.name);
-    }
-    //
     else {
       Locale locale = PlatformDispatcher.instance.locale;
-      if(['fr','en','pt'].contains(locale.languageCode)){
+      if(['fr','en'].contains(locale.languageCode)){
         return locale;
       }
       return Locale(Languages.fr.name);

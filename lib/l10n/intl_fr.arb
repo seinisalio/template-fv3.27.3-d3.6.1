@@ -4,5 +4,18 @@
     "@_DEMO_PAGE": {},
     "demoPageTitle": "Flutter Accueil démonstration",
     "demoPageMessage": "Vous avez appuyé autant de fois sur le bouton",
-    "demoPageBtnText": "Incrémentation"
+    "demoPageBtnText": "Incrémentation",
+    "@_SETTING_PAGE": {},
+    "settingPageTitle": "Paramètres",
+    "settingPageMenuLanguageTitle": "Langue",
+    "settingPageMenuLanguageFr": "Français",
+    "settingPageMenuLanguageEn": "Anglais",
+    "settingDefault": "Système",
+    "settingPageMenuThemeTitle": "Thème",
+    "settingPageMenuThemeDark": "Sombre",
+    "settingPageMenuThemeLight": "Clair",
+    "@_SETTING_PAGE_LANGUAGE": {},
+    "selectedLanguagePageSubTitle": "Choisissez la langue pour l'application",
+    "@_SETTING_PAGE_THEME": {},
+    "selectedThemePageSubTitle": "Choisissez le thème pour l'application"
 }

@@ -2,12 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../modules/demo/ui/pages/demo_page.dart';
+import '../../modules/settings/ui/settings_page.dart';
 import '../../shared/widgets/error_404.dart';
 import '../logger.dart';
 
 class AppRouter {
-
+  //-------------- DEMO ------------//
   static const demo = "/demo";
+  //-------------- SETTING ------------//
+  static const settings = "/settings";
   
   AppRouter._();
 
@@ -24,12 +27,32 @@ class AppRouter {
         child: NotFoundPage(),
       ),
       routes: [
-        GoRoute(
-          path: demo,
-          builder: (context, state) => const DemoPage(),
-        ),
+        //-------------- DEMO ------------//
+        ..._demoRoute(),
+        //-------------- SETTINGS ------------//
+        ..._settingsRoute(),
       ],
     );
+  }
+
+  //-------------- DEMO ROUTE ------------//
+  static List<RouteBase> _demoRoute(){
+    return [
+      GoRoute(
+        path: demo,
+        builder: (context, state) => const DemoPage(),
+      ),
+    ];
+  }
+
+  //-------------- DEMO ROUTE ------------//
+  static List<RouteBase> _settingsRoute(){
+    return [
+      GoRoute(
+        path: settings,
+        builder: (context, state) => const SettingsPage(),
+      ),
+    ];
   }
 
   //-------------- ---------------------- ------------//

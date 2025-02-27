@@ -4,5 +4,17 @@
     "@_DEMO_PAGE": {},
     "demoPageTitle": "Flutter Demo Home Page",
     "demoPageMessage": "You have pushed the button this many times",
-    "demoPageBtnText": "Increment"
+    "demoPageBtnText": "Increment",
+    "settingPageTitle": "Settings",
+    "settingPageMenuLanguageTitle": "Language",
+    "settingPageMenuLanguageFr": "French",
+    "settingPageMenuLanguageEn": "English",
+    "settingDefault": "System",
+    "settingPageMenuThemeTitle": "Theme",
+    "settingPageMenuThemeDark": "Dark",
+    "settingPageMenuThemeLight": "Light",
+    "@_SETTING_PAGE_LANGUAGE": {},
+    "selectedLanguagePageSubTitle": "Choose app language",
+    "@_SETTING_PAGE_THEME": {},
+    "selectedThemePageSubTitle": "Choose app theme"
 }
